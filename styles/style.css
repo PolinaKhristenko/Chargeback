@@ -1,0 +1,156 @@
+
+/* General */
+
+
+html {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 140%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+a, button {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+a, h1, p, li, ul, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+._regular {
+    font-size: 14px;
+    line-height: 20px;
+    color:#5B617C;
+}
+
+
+
+
+
+/* Header */ 
+
+.header {
+    margin-top: 16px;
+}
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__left img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.header__left-txt {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.header__left-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #2B3048;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 4px;
+
+}
+
+.header__txt-regular {
+
+}
+
+.header__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__cards {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.header__cards a:not(:last-child) {
+    margin-right: 24px;
+}
+
+
+
+/* Main 1 */
+
+.main {
+}
+.lawyer {
+}
+.lawyer__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.lawyer__body img {
+    max-width: 158px;
+    max-height: 25px;
+}
+
+.lawyer__title {
+}
+.lawyer__subtitle {
+}
+.lawyer__buttons {
+}
+.get__btn {
+}
+.contact__a {
+}
+.lawyer__download {
+}
+._regular {
+}
+.lawyer__img img {
+    position: absolute;
+    width: 744px;
+    height: 721px;
+    left: 570px;
+    top: 4px;
+}
