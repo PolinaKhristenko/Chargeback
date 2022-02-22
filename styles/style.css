@@ -152,6 +152,11 @@ a, h1, p, li, ul, h1, h2, h3, h4, div {
 
 .lawyer {
     margin-top: 64px;
+    background-image: url('../src/main-img.jpeg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    min-height: 620px;
 }
 
 .lawyer__chargeback {
@@ -180,6 +185,7 @@ a, h1, p, li, ul, h1, h2, h3, h4, div {
     font-size: 24px;
     line-height: 36px;
     color: #5B617C;
+    max-width: 525px;
 }
 .lawyer__buttons {
     display: flex;
@@ -215,15 +221,6 @@ a, h1, p, li, ul, h1, h2, h3, h4, div {
 }
 
 
-.lawyer__img {
-    max-width: 100%;
-    position: absolute;
-    left: 570px;
-    top: 4px;
-    z-index: -1;
-}
-
-
 
 
 
@@ -253,11 +250,13 @@ a, h1, p, li, ul, h1, h2, h3, h4, div {
     line-height: 48px;
     color: #2B3048;
     margin-bottom: 48px;
+    max-width: 654px;
 }
 
 .instruction__ul {
     display: flex;
 }
+
 
 
 
@@ -431,6 +430,7 @@ input:focus {
     text-align: left;
     display: flex;
     flex-direction: column;
+    max-width: 475px;
 }
 
 .footer__subtitle {
@@ -452,6 +452,7 @@ input:focus {
     text-align: right;
     display: flex;
     flex-direction: column;
+    max-width: 449px;
 }
 
 .footer__title {
@@ -633,16 +634,18 @@ input:focus {
         max-width: 960px;
     }
 
-    .lawyer__img {
-        display: none;
-    }
 
-    .instruction__body {
-        flex-direction: column;
+    .instruction__table {
+        max-width: 505px;
     }
 
     .modal-1 {
         margin-top: 20px;
+    }
+
+    .lawyer {
+        background-image: none;
+        min-height: unset;
     }
 
 }
@@ -651,6 +654,30 @@ input:focus {
 
     .container {
         max-width: 720px;
+    }
+
+    .instruction__body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instruction__ul {
+        margin: 0;
+    }
+
+    .instruction__info {
+        align-items: center;
+    }
+
+    .header__txt {
+        display: none;
+    }
+
+
+    .questions__txt,
+    .questions__txt div {
+        flex-direction: column;
+        text-align: center;
     }
 
 }
@@ -666,18 +693,61 @@ input:focus {
         flex-direction: column;
     }
 
-    .header__txt {
-        display: none;
+    .footer__left,
+    .footer__right {
+        text-align: left;
+        justify-self: flex-start;
     }
 
-    .questions__txt {
-        flex-direction: column;
-        text-align: center;
+    .footer__title {
+        align-self: flex-start;
+        font-size: 20px;
+        margin-top: 20px;
     }
+
+    .footer__medium {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .modal-1 {
+        width: 505px;
+    }
+
 }
 
 
 @media screen and (max-width: 576px) {
+
+    .modal-1 {
+        max-width: 505px;
+        width: auto;
+        padding: 20px;
+    }
+
+    .thanks__modal-scale {
+        margin-top: 50px;
+    }
+
+    .modal__body-3 {
+        padding: 40px;
+    }
+
+    .thanks__modal-3,
+    .modal__body-2,
+    .thanks__modal-2 {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .thanks__modal-book {
+        max-width: 60%;
+    }
+
+
+    .modal__title {
+        font-size: 25px;
+    }
 
     .container {
         max-width: 100%;
@@ -696,13 +766,8 @@ input:focus {
         margin-top: 28px;
     }
 
-    .footer__left,
-    .footer__right {
-        text-align: left;
-    }
-
     .footer {
-        padding: 0;
+        padding: 10px;
     }
 
     .header__cards {
@@ -715,20 +780,47 @@ input:focus {
 
     .lawyer__title {
         font-size: 30px;
-        text-align: center;
+        line-height: 40px;
     }
 
     .questions__title {
         font-size: 25px;
     }
 
+    .contact__a {
+        margin-left: 0;
+    }
+
+    .lawyer {
+        margin-top: 30px;
+    }
 
     .lawyer__buttons {
         flex-direction: column;
+        align-self: center;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+
+    .instruction__title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .lawyer__download {
+        margin: 0 auto;
     }
 
     .contact__a {
-        margin-top: 15px;
+        display: none;
+    }
+
+    .instruction {
+        padding-top: 50px;
+    }
+
+    .get__btn {
+        font-size: 18;
     }
 }
 

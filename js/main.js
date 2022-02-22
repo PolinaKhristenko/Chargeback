@@ -46,4 +46,8 @@ $(document).ready(function() {
     });
 
 
+
+    // Phone mask
+
+    $('.phone').mask('+7(999) 999-9999', {placeholder: '+7 (000) 000-00-00' });
 });
