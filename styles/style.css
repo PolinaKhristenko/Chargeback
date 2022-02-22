@@ -23,7 +23,7 @@ a, button {
     display: flex;
 }
 
-a, h1, p, li, ul, h1, h2, h3, h4 {
+a, h1, p, li, ul, h1, h2, h3, h4, div {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -47,12 +47,47 @@ a, h1, p, li, ul, h1, h2, h3, h4 {
     padding: 0 10px;
 }
 
+
+
+/* Reuse */
+
+
 ._regular {
     font-size: 14px;
     line-height: 20px;
     color:#5B617C;
 }
 
+._blue-bold {
+    font-weight: bold;
+    color: #007FEA;
+    display: inline-flex;
+}
+
+.logo-txt {
+    font-size: 24px;
+    line-height: 28px;
+    color: #2B3048;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.get__btn {
+    background: #007FEA;
+    border-radius: 12px;
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 16px 32px;
+    border: none;
+    transition: all 0.2s;
+}
+
+.get__btn:hover,
+.get__btn:active,
+.get__btn:focus {
+    background: #0058A1;
+}
 
 
 
@@ -85,18 +120,9 @@ a, h1, p, li, ul, h1, h2, h3, h4 {
     margin-left: 24px;
 }
 
-.header__left-title {
-    font-size: 24px;
-    line-height: 28px;
-    color: #2B3048;
-    font-style: normal;
-    font-weight: normal;
-    margin-bottom: 4px;
 
-}
-
-.header__txt-regular {
-
+.header__txt {
+    margin-top: 4px; 
 }
 
 .header__right {
@@ -109,6 +135,7 @@ a, h1, p, li, ul, h1, h2, h3, h4 {
     display: flex;
     justify-content: flex-end;
     margin-top: 12px;
+    z-index: 1;
 }
 
 .header__cards a:not(:last-child) {
@@ -120,12 +147,21 @@ a, h1, p, li, ul, h1, h2, h3, h4 {
 /* Main 1 */
 
 .main {
+
 }
+
 .lawyer {
+    margin-top: 64px;
 }
+
+.lawyer__chargeback {
+    margin-bottom: 16px;
+}
+
 .lawyer__body {
     display: flex;
     flex-direction: column;
+    max-width: 702px;
 }
 
 .lawyer__body img {
@@ -134,23 +170,565 @@ a, h1, p, li, ul, h1, h2, h3, h4 {
 }
 
 .lawyer__title {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 62px;
+    margin-bottom: 42px;
+    color: #2B3048;
 }
 .lawyer__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    color: #5B617C;
 }
 .lawyer__buttons {
+    display: flex;
+    align-items: baseline;
+    margin-top: 24px;
 }
-.get__btn {
-}
+
 .contact__a {
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #007FEA;
+    transition: all 0.2s;
+    margin-left: 40px;
 }
+
+.contact__a:hover,
+.contact__a:active,
+.contact__a:focus {
+    color: #1300EA;
+}
+
 .lawyer__download {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
 }
-._regular {
+
+.lawyer__download img {
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 8px;
 }
-.lawyer__img img {
+
+
+.lawyer__img {
+    max-width: 100%;
     position: absolute;
-    width: 744px;
-    height: 721px;
     left: 570px;
     top: 4px;
+    z-index: -1;
 }
+
+
+
+
+
+/* Main 2 */ 
+
+
+
+.instruction {
+    background: #F6F7FA;
+    padding-top: 100px;
+    max-width: 100%;
+}
+
+.instruction__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.instruction__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.instruction__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #2B3048;
+    margin-bottom: 48px;
+}
+
+.instruction__ul {
+    display: flex;
+}
+
+
+
+.instruction__list li {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2B3048;
+}
+
+.instruction__list li:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.instruction__list:not(:last-child) {
+    margin-right: 103px;
+}
+
+.instruction__list-num {
+    margin-right: 16px;
+}
+
+.instruction__table {
+    padding: 44px 60px;
+    border: 1px solid #FFA800;
+    box-shadow: 0px 4px 7px rgba(121, 126, 147, 0.06);
+    border-radius: 12px;
+    margin-top: 60px;
+    transition: all 0.3s;
+    max-width: 583px;
+}
+
+.instruction__table:hover {
+    background: #a8c1e63a;
+}
+
+.instruction__table-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFA800;
+    margin-bottom: 16px;
+}
+
+.instruction__table-txt {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    color: #2B3048;
+}
+
+.modal-1 {
+    background: #FFFFFF;
+    border: 1px solid #CBD0E8;
+    box-shadow: 0px 4px 7px rgba(121, 126, 147, 0.06);
+    border-radius: 12px;
+    padding: 40px 60px 52px 60px;
+    display: flex;
+    flex-direction: column;
+    max-width: 505px;
+}
+
+.modal__title {
+    align-self: center;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.modal__form {
+
+}
+
+.modal__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__item:not(:last-child) {
+   margin-bottom: 20px; 
+}
+
+
+.modal__item label {
+    font-size: 16px;
+    line-height: 24px;
+    color: #5B617C;
+    margin-bottom: 8px;
+}
+
+.modal__item input {
+    border: 1px solid #A5AABE;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+select {
+    border: 1px solid #A5AABE !important;
+    border-radius: 8px !important;
+    padding: 10px 12px !important;
+    color: #5B617C !important;
+}
+
+input:active,
+input:focus {
+    border: 1px solid #5B617C !important;
+}
+
+#modal__btn-1 {
+    margin: 60px auto 0 auto;
+}
+
+.thanks__body-1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* Main 3 */
+
+.questions {
+    max-width: 100%;
+    background: #2B3048;
+    padding: 80px 0;
+    margin-top: 108px;
+}
+
+.questions__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions__title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.questions__txt {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+
+
+
+/* Footer */ 
+
+
+.footer {
+    max-width: 100%;
+    background: #5B617C;
+    padding: 100px;
+}
+
+.footer__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.footer__txt {
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+
+
+.footer__right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__title {
+    align-self: flex-end;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+
+.footer__medium {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.footer a {
+    transition: all 0.3s;
+}
+
+.footer a:hover {
+    opacity: 0.5;
+}
+
+
+
+/* Modal windows */ 
+
+
+/* 2 */ 
+
+.modal-2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__body-2 {
+    position: relative;
+    max-width: 603px;
+    padding: 48px 109px 141px 109px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    max-height: 669px;
+}
+
+.instruction__modal-title {
+}
+.modal__close {
+    z-index: 10;
+    position: absolute;
+    left: 92%;
+    top: 3%;
+}
+
+#modal__btn-2 {
+    margin: 0 auto;
+}
+
+
+
+.thanks__modal-1 {
+    display: none; 
+}
+
+
+
+.thanks__modal-2 {
+    display: none; 
+    background: #FFFFFF;
+    border-radius: 8px;
+    max-width: 603px;
+    padding: 48px 109px 52px 109px;
+    position: relative;
+}
+
+.thanks__body-2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.thanks__modal-book {
+    max-width: 349px;
+    max-height: 425px;
+}
+
+.thanks__modal-title {
+    align-self: center;
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.thanks__modal-txt {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #2B3048;
+    margin-bottom: 26px;
+}
+
+
+/* 3 */ 
+
+.modal-3 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__body-3 {
+    position: relative;
+    max-width: 603px;
+    padding: 48px 109px 60px 109px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-height: 568px;
+}
+
+#modal__btn-3 {
+    margin: 0 auto;
+}
+
+.thanks__modal-scale {
+    max-width: 60px;
+    max-height: 60px;
+    margin: 101px auto 24px auto;
+}
+
+.thanks__modal-3 {
+    display: none; 
+    background: #FFFFFF;
+    border-radius: 8px;
+    max-width: 603px;
+    padding: 48px 109px 52px 109px;
+    position: relative;
+}
+
+.thanks__body-3 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* Media */ 
+
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    .lawyer__img {
+        display: none;
+    }
+
+    .instruction__body {
+        flex-direction: column;
+    }
+
+    .modal-1 {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 540px;
+    }
+
+    .footer__body {
+        flex-direction: column;
+    }
+
+    .header__txt {
+        display: none;
+    }
+
+    .questions__txt {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .instruction__ul {
+        flex-direction: column;
+    }
+
+    .instruction__list:first-child {
+        margin-right: 0;
+    }
+
+    .instruction__list:last-child {
+        margin-top: 28px;
+    }
+
+    .footer__left,
+    .footer__right {
+        text-align: left;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .header__cards {
+        display: none;
+    }
+
+    .header__body {
+        justify-content: center;
+    }
+
+    .lawyer__title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .questions__title {
+        font-size: 25px;
+    }
+
+
+    .lawyer__buttons {
+        flex-direction: column;
+    }
+
+    .contact__a {
+        margin-top: 15px;
+    }
+}
+
