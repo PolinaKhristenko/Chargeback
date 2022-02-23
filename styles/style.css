@@ -53,6 +53,12 @@ a, h1, p, li, ul, h1, h2, h3, h4, div {
 }
 
 
+input:focus:required:valid,
+input:focus:required:placeholder-shown { 
+    border: 1px solid #5B617C !important;
+    color: #2B3048 !important;
+    background: #F6F7FA !important;
+}
 
 /* Reuse */
 
