@@ -152,11 +152,15 @@ a, h1, p, li, ul, h1, h2, h3, h4, div {
 
 .lawyer {
     margin-top: 64px;
+
+}
+
+.lawyer__back {
     background-image: url('../src/main-img.jpeg');
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: right;
-    min-height: 620px;
+    min-height: 620px; 
 }
 
 .lawyer__chargeback {
@@ -643,7 +647,7 @@ input:focus {
         margin-top: 20px;
     }
 
-    .lawyer {
+    .lawyer__back {
         background-image: none;
         min-height: unset;
     }
