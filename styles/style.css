@@ -2,16 +2,12 @@
 /* General */
 
 
-html {
-    font-size: 16px;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    line-height: 140%;
-}
-
-body {
+html, body {
     min-height: 100%;
     margin: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 140%;
 }
 
 a, button {
@@ -188,7 +184,7 @@ input:focus:required:placeholder-shown {
 /* Main 1 */
 
 .main {
-
+    flex: 1 1 auto;
 }
 
 .lawyer {
