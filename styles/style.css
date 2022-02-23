@@ -23,7 +23,7 @@ a, button {
     display: flex;
 }
 
-a, h1, p, li, ul, h1, h2, h3, h4, div {
+a, h1, p, li, ul, h1, h2, h3, h4, div, h5, h6 {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -216,7 +216,7 @@ input:focus:required:placeholder-shown {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 702px;
+    max-width: 645px;
 }
 
 .lawyer__body img {
@@ -293,6 +293,7 @@ input:focus:required:placeholder-shown {
     background: #F6F7FA;
     padding-top: 100px;
     max-width: 100%;
+    padding-bottom: 108px;
 }
 
 .instruction__body {
@@ -381,6 +382,12 @@ input:focus:required:placeholder-shown {
     font-size: 24px;
     line-height: 40px;
     color: #2B3048;
+}
+
+.instruction__body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .modal-1 {
@@ -480,7 +487,6 @@ input:focus {
     max-width: 100%;
     background: #2B3048;
     padding: 80px 0;
-    margin-top: 108px;
 }
 
 .questions__body {
@@ -516,6 +522,10 @@ input:focus {
     margin-bottom: 40px;
 }
 
+.questions__txt div {
+    margin: 0 5px;
+}
+
 
 
 
@@ -535,6 +545,7 @@ input:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    justify-self: flex-end;
 }
 
 .footer__left {
@@ -652,6 +663,9 @@ input:focus {
     position: absolute;
     left: 92%;
     top: 3%;
+    font-size: 30px;
+    font-weight: 300;
+    color: #5B617C; ;
 }
 
 #modal__btn-2 {
@@ -764,7 +778,58 @@ input:focus {
     margin: 0 auto;
 }
 
+/* 4 */
 
+.modal-4 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.modal__body-4 {
+    position: relative;
+    max-width: 603px;
+    padding: 48px 109px 60px 109px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 568px;
+}
+
+.thanks__modal-4 {
+    display: none; 
+    background: #FFFFFF;
+    border-radius: 8px;
+    max-width: 603px;
+    padding: 48px 109px 52px 109px;
+    position: relative;
+}
+
+.thanks__body-4 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#modal__btn-4 {
+    margin: 0 auto;
+}
 
 
 
@@ -778,6 +843,9 @@ input:focus {
         max-width: 960px;
     }
 
+    .modal__title {
+        font-size: 28px;
+    }
 
     .instruction__table {
         max-width: 505px;
@@ -785,12 +853,35 @@ input:focus {
 
     .modal-1 {
         margin-top: 20px;
+        min-width: 415px;
+        max-width: 430px;
     }
 
     .lawyer__back {
         background-image: none;
         min-height: unset;
     }
+
+    .questions__title {
+        font-size: 40px;
+    }
+
+    .instruction__list:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    .instruction__title {
+        font-size: 28px;
+    }
+
+    .instruction {
+        padding-top: 30px;
+    }
+
+    .lawyer {
+        padding-bottom: 30px;
+    }
+
 
 }
 
@@ -800,14 +891,16 @@ input:focus {
         max-width: 720px;
     }
 
+
+
     .instruction__body {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
 
     .instruction__ul {
@@ -815,9 +908,9 @@ input:focus {
     }
 
     .instruction__info {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
 
     .header__txt {
@@ -831,11 +924,65 @@ input:focus {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        text-align: center;
+        text-align: left;
+    }
+
+    .questions__txt div {
+        margin-left: 0;
+    }
+
+    .questions__title {
+        font-size: 36px;
+    }
+
+    .lawyer__title {
+        font-size: 40px;
+        line-height: 48px;
     }
 
     .modal-1 {
         width: 505px;
+        max-width: unset;
+    }
+
+    .footer {
+        padding: 50px;
+    }
+
+    .footer__body {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .footer__left,
+    .footer__right {
+        text-align: left;
+        justify-self: flex-start;
+    }
+
+    .footer__title {
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .footer__medium {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .questions__body {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        
+    }
+
+    .modal-1 {
+        min-width: unset;
     }
 
 }
@@ -845,6 +992,14 @@ input:focus {
 
     .container {
         max-width: 540px;
+    }
+
+    .footer {
+        padding: 50px;
+    }
+
+    .get__btn {
+        font-size: 22px;
     }
 
     .footer__body {
@@ -880,7 +1035,7 @@ input:focus {
 
     .modal-1 {
         max-width: 505px;
-        width: auto;
+        width: 100%;
         padding: 20px;
     }
 
@@ -888,15 +1043,15 @@ input:focus {
         margin-top: 50px;
     }
 
-    .modal__body-3 {
-        padding: 40px;
-    }
-
     .thanks__modal-3,
     .modal__body-2,
-    .thanks__modal-2 {
+    .thanks__modal-2,
+    .modal__body-3,
+    .thanks__modal-4,
+    .modal__body-4 {
         padding: 20px;
         margin: 10px;
+        width: 100%
     }
 
     .thanks__modal-book {
@@ -905,11 +1060,12 @@ input:focus {
 
 
     .modal__title {
-        font-size: 25px;
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .container {
-        max-width: 100%;
+        max-width: 450px;
         padding: 0 20px;
     }
 
@@ -920,16 +1076,20 @@ input:focus {
                 flex-direction: column;
     }
 
-    .instruction__list:first-child {
-        margin-right: 0;
+    .instruction__table-title {
+        font-size: 25px;
     }
 
     .instruction__list:last-child {
         margin-top: 28px;
     }
 
+    .instruction__table-txt {
+        font-size: 20px;
+    }
+
     .footer {
-        padding: 10px;
+        padding: 30px 0;
     }
 
     .header__cards {
@@ -943,12 +1103,23 @@ input:focus {
     }
 
     .lawyer__title {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .lawyer__subtitle {
+        font-size: 20px;
+        line-height: 30px;
     }
 
     .questions__title {
         font-size: 25px;
+    }
+
+    .questions {
+        padding: 30px 0;
+        margin-top: 0;
     }
 
     .contact__a {
@@ -957,6 +1128,7 @@ input:focus {
 
     .lawyer {
         margin-top: 30px;
+        padding-bottom: 20px;
     }
 
     .lawyer__buttons {
@@ -964,31 +1136,47 @@ input:focus {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
-        margin-top: 35px;
+        -ms-flex-item-align: start;
+            -ms-grid-row-align: start;
+            align-self: flex-start;
+        margin-top: 10px;
         margin-bottom: 10px;
     }
 
     .instruction__title {
-        font-size: 25px;
-        text-align: center;
+        font-size: 20px;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .instruction__list:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .instruction__list li {
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    .instruction__table {
+        padding: 20px;
     }
 
     .lawyer__download {
-        margin: 0 auto;
+        margin: 0;
     }
 
     .contact__a {
-        display: none;
+        font-size: 16px;
+        margin: 10px 0 10px 5px;
     }
 
     .instruction {
-        padding-top: 50px;
+        padding: 30px 0;
     }
 
     .get__btn {
-        font-size: 18;
+        font-size: 1rem;
+        padding: 12px 24px;
     }
 }
